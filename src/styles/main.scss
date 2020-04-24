@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,600&display=swap&subset=latin-ext");
+@import "reset";
+@import "variables";
+@import "components/header";
+@import "components/mainContent.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.6rem;
+  color: $brandBlue;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+    left: -0.4rem;
+    bottom: 1.3rem;
+    background: $mainGrad;
+    z-index: -1;
+  }
+}
+
+h3 {
+  font-size: 3rem;
+  color: $brandBlue;
+}
+
+a {
+  text-decoration: none;
+  color: inh;
+}
+
+.footer {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  border-radius: $buttonRadius;
+  color: white;
+  cursor: pointer;
+}

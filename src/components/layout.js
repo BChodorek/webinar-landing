@@ -7,41 +7,34 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
-import "./layout.css"
+import MainContent from "./mainContent"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+class Layout extends React.Component {
+  componentDidMount() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault()
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        })
+      })
+    })
+  }
+
+  render() {
+    return (
+      <>
+        <Header />
+        <MainContent/>
+        <div>
+          <main>{this.props.children}</main>
+          <footer class="footer" id="signup">digitalt.pl © {new Date().getFullYear()}</footer>
+        </div>
+      </>
+    )
+  }
 }
 
 Layout.propTypes = {

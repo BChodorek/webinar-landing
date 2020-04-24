@@ -1,0 +1,71 @@
+.header {
+  background: $imageGrad, url("../images/heroBG.jpg");
+  background-size: cover;
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+
+  &__nav {
+    font-weight: lighter;
+  }
+
+  &__navList {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__navItem:nth-child(2) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  &__navItem a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: $brandBlue;
+    }
+  }
+
+  &__heading {
+    border-bottom: 1px solid $brandBlue;
+    margin-bottom: 1rem;
+
+    & span {
+      z-index: 100;
+      position: relative;
+
+      &:before {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        bottom: 1.75rem;
+        left: 2.5%;
+        width: 95%;
+        height: 30%;
+        background: $mainGrad;
+      }
+    }
+  }
+  &__CTA {
+    background:$mainGrad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    transition: ease 0.2s;
+    padding: 0.8rem;
+    padding-bottom: 0;
+    &:hover {
+      box-shadow: $shadowHover;
+    }
+    & img {
+      max-width: 20px;
+    }
+  }
+}
