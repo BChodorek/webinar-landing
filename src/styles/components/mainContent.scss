@@ -1,13 +1,15 @@
 .mainContent {
-  width: 65%;
+  width: 75%;
   margin: auto;
+  margin-top: 2rem;
+  padding: 4rem 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
+  background-color: rgba($brandPurple, 0.05);
+  border-radius: 4px;
   & article {
-    margin-top: 2rem;
-    padding-top: 3rem;
+    margin-top: 3rem;
   }
 
   &__aboutContent {
@@ -18,8 +20,6 @@
   }
 
   &__speakersContainer {
-    padding-left: 3rem;
-    padding-right: 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -67,32 +67,106 @@
     align-items: center;
   }
   &__agendaItem {
-    width: 75%;
+    width: 95%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    line-height: 100%;
     border-radius: 2px;
     background-color: rgba($brandBlue, 0.1);
-
+    margin-bottom: 2rem;
     &:nth-of-type(even) {
       background-color: white;
     }
     & span {
-      padding: 2rem;
+      padding: 2rem 0;
       margin-left: 2rem;
       margin-right: 2rem;
-      display: table-cell;
-      vertical-align: middle;
     }
 
     & .title {
       font-weight: bold;
+      font-size: 1.4rem;
+      margin-right: auto;
     }
     & .duration {
-      margin-left: auto;
-      margin-right: 2rem;
+
       color: rgba($brandBlue, 0.4);
       font-size: 2.6rem;
       font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    width: 100%;
+    margin: auto;
+    padding: 0rem;
+    & article {
+      padding: 2rem;
+    }
+
+    &__aboutContent {
+      line-height: 200%;
+      padding: 0;
+      border: none;
+    }
+    &__speakersContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__speaker {
+      display: flex;
+      flex-direction: column;
+      border-left: none;
+      margin-bottom: 2rem;
+
+      &:nth-of-type(even) {
+        flex-direction: column;
+        border-right: none;
+        align-self: center;
+      }
+    }
+    &__speakerPhoto {
+      height: 15rem;
+      width: 15rem;
+      margin: auto;
+    }
+
+    &__agendaContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__agendaItem {
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      line-height: 100%;
+      margin-bottom: 2rem;
+      & span {
+        padding: 1rem 1rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      & .title {
+        font-weight: bold;
+        line-height: 130%;
+        margin:0;
+        text-align: center;
+      }
+      & .duration {
+        margin: 0;
+        color: rgba($brandBlue, 0.4);
+        font-size: 2.6rem;
+        font-weight: bold;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Salesforce webinar with digitalt`,
-    description: `Transformacja cyfrowa na nowym poziome z Salesforce`,
+    title: `Transformacja cyfrowa z Salesforce`,
+    description: `Transformacja cyfrowa banków spółdzielczych - webinar`,
     author: `digitalt.pl`,
   },
   plugins: [
@@ -13,6 +13,12 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: 'https://salesforcesista.us3.list-manage.com/subscribe/post?u=90f477494e26672332a8a7d51&amp;id=b4c9dff4db',
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

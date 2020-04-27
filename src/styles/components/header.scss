@@ -38,21 +38,10 @@
     & span {
       z-index: 100;
       position: relative;
-
-      &:before {
-        content: " ";
-        position: absolute;
-        z-index: -1;
-        bottom: 1.75rem;
-        left: 2.5%;
-        width: 95%;
-        height: 30%;
-        background: $mainGrad;
-      }
     }
   }
   &__CTA {
-    background:$mainGrad;
+    background: $mainGrad;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,6 +55,30 @@
     }
     & img {
       max-width: 20px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &__navItem:nth-child(2) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    &__heading {
+      text-align: center;
+      line-height: 110%;
+      & span:before {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        bottom: 20%;
+        left: 2.5%;
+        width: 95%;
+        height: 30%;
+        background: $mainGrad;
+      }
     }
   }
 }

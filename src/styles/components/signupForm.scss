@@ -1,0 +1,47 @@
+.signUp {
+  width: 45%;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & label {
+    display: flex;
+    flex-direction: column;
+    color: $brandBlue;
+    margin-bottom: rem;
+    & input {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid grey;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+  & > * {
+    padding-bottom: 2rem;
+  }
+  &__button {
+    width: 30%;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+    align-self: center;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  &__message {
+    align-self: center;
+    transition-delay: 0.1s;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 1024px) {
+  .signUp {
+    width: 75%;
+  }
+}

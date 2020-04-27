@@ -3,25 +3,25 @@ import React from "react"
 import chevron from '../images/chevronDown.svg';
 
 const Header = ({ siteTitle }) => (
-  <header class="header">
+  <header className="header">
 
-    <nav class="header__nav">
-      <ul class="header__navList">
-        <li class="header__navItem">
+    <nav className="header__nav">
+      <ul className="header__navList">
+        <li className="header__navItem">
           <a href="#about">O wydarzeniu</a>
         </li>
-        <li class="header__navItem">
+        <li className="header__navItem">
           <a href="#speakers">Prelegenci</a>
         </li>
-        <li class="header__navItem">
+        <li className="header__navItem">
           <a href="#agenda">Agenda</a>
         </li>
       </ul>
     </nav>
-    <div class="header__headingContainer">
-      <h1 class="header__heading">Transformacja Banku z <span>Salesforce</span>
+    <div className="header__headingContainer">
+      <h1 className="header__heading">Transformacja cyfrowa banków spółdzielczych
       </h1>
-      <p class="header__eventDate">20 maja 2020</p>
+      <p className="header__eventDate">20 maja 2020</p>
     </div>
     <a href="#signup"><button class="button header__CTA">
         <p>Zapisz się na wydarzenie</p>
