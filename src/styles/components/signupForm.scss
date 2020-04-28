@@ -1,7 +1,7 @@
 .signUp {
   width: 45%;
   margin: auto;
-  margin-top: 4rem;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     color: $brandBlue;
-    margin-bottom: rem;
+    padding-bottom: 2rem;
+
     & input {
       margin-top: 1rem;
       padding: 1rem;
@@ -19,9 +20,15 @@
       background: rgba(255, 255, 255, 0.5);
     }
   }
-  & > * {
-    padding-bottom: 2rem;
+
+  &__consent {
+    text-align: left;
+    font-size: 10px;
+    color: black !important;
+    line-height: 150%;
+
   }
+
   &__button {
     width: 30%;
     font-size: 1.6rem;
@@ -31,17 +38,86 @@
     transition: visibility 0s, opacity 0.5s linear;
   }
   &__message {
+    padding: 2rem;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: green;
     align-self: center;
-    transition-delay: 0.1s;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-    display: none;
-    visibility: hidden;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s linear;
   }
 }
 
 @media(max-width: 1024px) {
   .signUp {
-    width: 75%;
+    width: 95%;
   }
+}
+// CHECKBOX
+
+.checkbox {
+  // width:10%;
+}
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.checkbox label {
+  position: relative;
+  display: block;
+
+  /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+  padding-left: 24px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+  height: 16px;
+  width: 16px;
+
+  border: 1px solid;
+  left: 1px;
+
+  /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+   *to vertically center it.
+   */
+  top: 0px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+  height: 5px;
+  width: 9px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+
+  transform: rotate(-45deg);
+
+  left: 4px;
+  top: 4px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }

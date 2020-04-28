@@ -31,6 +31,14 @@
     }
   }
 
+  &__headingContainer {
+    text-align: center;
+  }
+
+  &__eventDate {
+    font-weight: bold;
+  }
+
   &__heading {
     border-bottom: 1px solid $brandBlue;
     margin-bottom: 1rem;

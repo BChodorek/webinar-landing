@@ -9,14 +9,14 @@ const mainContent = () => (
       <h2 className="mainContent__title">O wydarzeniu</h2>
       <p className="mainContent__aboutContent">
         Banki spółdzielcze to jedne z najbardziej zaufanych instytucji w Polsce.
-        Jednak razem z kredytem zaufania, klienci wiążą nowe oczekiwania - między innymi
-        lepszego zrozumienia ich potrzeb, komunikacji na wielu kanałach,
-        pro-aktywnej pomocy. Aby sprostać tym oczekiwaniom, banki spółdzielcze
-        mogą rozważyć nowe podejście do cyfrowej transformacji. Dlatego chcemy
-        zaprosić Was, przedstawicieli banków spółdzielczych w Polsce, na
-        bezpłatne wydarzenie, jakim jest konferencja online 20 maja 2020 r,
-        gdzie porozmawiamy właśnie o tym, korzystając z doświadczeń z bankami
-        spółdzielczymi w Europie i USA.
+        Jednak razem z kredytem zaufania, klienci wiążą nowe oczekiwania -
+        między innymi lepszego zrozumienia ich potrzeb, komunikacji na wielu
+        kanałach, pro-aktywnej pomocy. Aby sprostać tym oczekiwaniom, banki
+        spółdzielcze mogą rozważyć nowe podejście do cyfrowej transformacji.
+        Dlatego chcemy zaprosić Was, przedstawicieli banków spółdzielczych w
+        Polsce, na bezpłatne wydarzenie, jakim jest konferencja online 20 maja
+        2020 r, gdzie porozmawiamy właśnie o tym, korzystając z doświadczeń z
+        bankami spółdzielczymi w Europie i USA.
       </p>
     </article>
     <article className="maintContent__speakers" id="speakers">
@@ -67,10 +67,11 @@ const mainContent = () => (
     <article className="mainContent__agenda" id="agenda">
       <h2 className="mainContent__title">Agenda</h2>
       <div className="mainContent__agendaContent">
-
         <div className="mainContent__agendaItem">
           <span className="time">12:00 - 12:05</span>
-          <span className="title">Rozpęcie konferencji oraz powitanie uczestników i gości</span>
+          <span className="title">
+            Rozpęcie konferencji oraz powitanie uczestników i gości
+          </span>
           <span className="duration">5'</span>
         </div>
         <div className="mainContent__agendaItem">
@@ -80,17 +81,26 @@ const mainContent = () => (
         </div>
         <div className="mainContent__agendaItem">
           <span className="time">12:25 - 12:45</span>
-          <span className="title">Pokochaj Klienta a nie produkt - czyli o przyszłości Obsługi Klienta w bankowości</span>
+          <span className="title">
+            Pokochaj Klienta a nie produkt - czyli o przyszłości Obsługi Klienta
+            w bankowości
+          </span>
           <span className="duration">20'</span>
         </div>
         <div className="mainContent__agendaItem">
           <span className="time">12:45 - 13:05</span>
-          <span className="title"> Zdalne wsparcie sprzedaży i budowania relacji z Klientem </span>
+          <span className="title">
+            {" "}
+            Zdalne wsparcie sprzedaży i budowania relacji z Klientem{" "}
+          </span>
           <span className="duration">20'</span>
         </div>
         <div className="mainContent__agendaItem">
           <span className="time">13:05 - 13:25</span>
-          <span className="title">Jak omnichannel i personalizacja komunikacji pomoże Bankom Spółdzielczym w walce o nowych Klientów?</span>
+          <span className="title">
+            Jak omnichannel i personalizacja komunikacji pomoże Bankom
+            Spółdzielczym w walce o nowych Klientów?
+          </span>
           <span className="duration">20'</span>
         </div>
         <div className="mainContent__agendaItem">
@@ -100,7 +110,9 @@ const mainContent = () => (
         </div>
         <div className="mainContent__agendaItem">
           <span className="time">13:40 - 13:55</span>
-          <span className="title">Pytania i zagadnienia od słuchaczy i obserwatorów Konferencji</span>
+          <span className="title">
+            Pytania i zagadnienia od słuchaczy i obserwatorów Konferencji
+          </span>
           <span className="duration">15'</span>
         </div>
         <div className="mainContent__agendaItem">
@@ -116,18 +128,26 @@ const mainContent = () => (
         Chcielibyście, żebyśmy pokryli konkretne aspekty, które są dla Was
         najbardziej interesujące? Napiszcie do nas poniżej.
         <br />
-        <br />
+        <p>
           Jeśli chcielibyście zaprosić koleżanki i kolegów z banku - wystarczy
           podzielić się z nimi tą stroną.
-          <br/>
-        <strong>
-          Pozdrawiamy serdecznie z Dublina,
-          Krakowa i Warszawy,<br/> Zespół Digitalt & Salesforce
-        </strong>
+        </p>
+        <p>
+          Pozdrawiamy serdecznie z Dublina, Krakowa i Warszawy,
+          <br /> Zespół Digitalt & Salesforce
+        </p>
       </p>
     </article>
     <article className="signupForm">
       <h2 className="mainContent__title">Zapisz się</h2>
+      <p className="mainContent__aboutContent">
+        Konferencja odbędzie się w trybie on-line 20 maja 2020 o godz. 12:00.
+        <p>
+          Jeśli chcesz wziąć w niej udział wypełnij poniższy formularz, a my
+          prześlemy Ci szczegółowe informacje wraz z linkiem do wydarzenia
+          on-line.
+        </p>
+      </p>
       <SignupForm />
     </article>
   </section>

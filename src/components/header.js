@@ -19,11 +19,11 @@ const Header = ({ siteTitle }) => (
       </ul>
     </nav>
     <div className="header__headingContainer">
-      <h1 className="header__heading">Transformacja cyfrowa banków spółdzielczych
+      <h1 className="header__heading">Transformacja cyfrowa Banków Spółdzielczych
       </h1>
       <p className="header__eventDate">20 maja 2020</p>
     </div>
-    <a href="#signup"><button class="button header__CTA">
+    <a href="#signup"><button className="button header__CTA">
         <p>Zapisz się na wydarzenie</p>
         <img src={chevron} alt="strzałka kierująca w dół"/>
       </button>
