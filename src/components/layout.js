@@ -28,17 +28,11 @@ class Layout extends React.Component {
       <>
         <Header />
         <MainContent/>
-        <div>
-          <main>{this.props.children}</main>
           <footer className="footer" >digitalt.pl © {new Date().getFullYear()}</footer>
-        </div>
       </>
     )
   }
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout
