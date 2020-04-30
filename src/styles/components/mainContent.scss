@@ -119,10 +119,21 @@
     width: 100%;
     margin: auto;
     padding: 0rem;
+
+    &__logoContainer {
+    flex-direction: column;
+    margin:2rem auto;
+    padding: 5rem;
+    }
+    &__logo {
+      width: 8rem;
+    }
     & article {
       padding: 2rem;
     }
-
+    &__about {
+      margin-top: 0 !important;
+    }
     &__aboutContent {
       line-height: 200%;
       padding: 0;
