@@ -1,0 +1,120 @@
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 35rem;
+    &__navItem:nth-child(2) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    &__heading {
+      text-align: center;
+      line-height: 110%;
+      & span:before {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        bottom: 20%;
+        left: 2.5%;
+        width: 95%;
+        height: 30%;
+        background: $mainGrad;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    width: 100%;
+    margin: auto;
+    padding: 0rem;
+
+    &__logoContainer {
+      flex-direction: column;
+      margin: 2rem auto;
+      padding: 5rem;
+    }
+    &__logo {
+      width: 8rem;
+    }
+    & article {
+      padding: 2rem;
+    }
+    &__about {
+      margin-top: 0 !important;
+    }
+    &__aboutContent {
+      line-height: 200%;
+      padding: 0;
+      border: none;
+    }
+    &__speakersContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__speaker {
+      display: flex;
+      flex-direction: column;
+      border-left: none;
+      margin-bottom: 2rem;
+
+      &:nth-of-type(even) {
+        flex-direction: column;
+        border-right: none;
+        align-self: center;
+      }
+    }
+    &__speakerPhoto {
+      height: 15rem;
+      width: 15rem;
+      margin: auto;
+    }
+
+    &__agendaContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__agendaItem {
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      line-height: 100%;
+      margin-bottom: 2rem;
+      & span {
+        padding: 1rem 1rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      & .title {
+        font-weight: bold;
+        line-height: 130%;
+        margin: 0;
+        text-align: center;
+      }
+      & .duration {
+        margin: 0;
+        color: rgba($brandBlue, 0.4);
+        font-size: 2.6rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

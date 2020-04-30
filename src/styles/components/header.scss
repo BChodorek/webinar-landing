@@ -67,28 +67,3 @@
     }
   }
 }
-@media (max-width: 767px) {
-  .header {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: 35rem;
-    &__navItem:nth-child(2) {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-    &__heading {
-      text-align: center;
-      line-height: 110%;
-      & span:before {
-        content: " ";
-        position: absolute;
-        z-index: -1;
-        bottom: 20%;
-        left: 2.5%;
-        width: 95%;
-        height: 30%;
-        background: $mainGrad;
-      }
-    }
-  }
-}
