@@ -1,0 +1,60 @@
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: $brandBlue;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+    left: -0.6rem;
+    bottom: 0.5rem;
+    background: $mainGrad;
+    z-index: -1;
+  }
+}
+
+h3 {
+  font-size: 1.6em;
+  color: $brandBlue;
+}
+
+a {
+  text-decoration: none;
+  color: inh;
+}
+
+.footer {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  border-radius: $buttonRadius;
+  background: $mainGrad;
+  color: white;
+  cursor: pointer;
+}
+
