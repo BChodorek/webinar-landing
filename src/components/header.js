@@ -23,6 +23,7 @@ const Header = ({ siteTitle }) => (
       </h1>
       <p className="header__eventDate">20 maja 2020</p>
     </div>
+
     <a href="#signup"><button className="button header__CTA">
         <p>Zapisz się na wydarzenie</p>
         <img src={chevron} alt="strzałka kierująca w dół"/>

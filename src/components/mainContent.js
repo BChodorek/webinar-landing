@@ -2,9 +2,24 @@ import React from "react"
 import FirstPortrait from "../images/portrait1.jpg"
 import SecondPortrait from "../images/portrait2.jpg"
 import SignupForm from "./signupForm"
+import SalesforceLogo from "../images/sfLogo.svg"
+import DigitaltLogo from "../images/digitalt.png"
 
 const mainContent = () => (
   <section className="mainContent">
+    <div className="mainContent__logoContainer">
+
+      <img
+        className="mainContent__logo"
+        src={DigitaltLogo}
+        alt="logo digitalt.pl"
+      />
+      <img
+        className="mainContent__logo"
+        src={SalesforceLogo}
+        alt="logo Salesforce"
+      />
+    </div>
     <article className="mainContent__about" id="about">
       <h2 className="mainContent__title">O wydarzeniu</h2>
       <p className="mainContent__aboutContent">
@@ -128,25 +143,25 @@ const mainContent = () => (
         Chcielibyście, żebyśmy pokryli konkretne aspekty, które są dla Was
         najbardziej interesujące? Napiszcie do nas poniżej.
         <br />
-        <p>
+        <span>
           Jeśli chcielibyście zaprosić koleżanki i kolegów z banku - wystarczy
           podzielić się z nimi tą stroną.
-        </p>
-        <p>
+        </span>
+        <span>
           Pozdrawiamy serdecznie z Dublina, Krakowa i Warszawy,
           <br /> Zespół Digitalt & Salesforce
-        </p>
+        </span>
       </p>
     </article>
     <article className="signupForm">
       <h2 className="mainContent__title">Zapisz się</h2>
       <p className="mainContent__aboutContent">
         Konferencja odbędzie się w trybie on-line 20 maja 2020 o godz. 12:00.
-        <p>
+        <span>
           Jeśli chcesz wziąć w niej udział wypełnij poniższy formularz, a my
           prześlemy Ci szczegółowe informacje wraz z linkiem do wydarzenia
           on-line.
-        </p>
+        </span>
       </p>
       <SignupForm />
     </article>

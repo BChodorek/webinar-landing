@@ -12,12 +12,13 @@
     color: $brandBlue;
     padding-bottom: 2rem;
 
-    & input {
+    & input, select {
       margin-top: 1rem;
       padding: 1rem;
       border: 1px solid grey;
       border-radius: 4px;
       background: rgba(255, 255, 255, 0.5);
+      color: black;
     }
   }
 

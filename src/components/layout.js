@@ -30,7 +30,7 @@ class Layout extends React.Component {
         <MainContent/>
         <div>
           <main>{this.props.children}</main>
-          <footer class="footer" >digitalt.pl © {new Date().getFullYear()}</footer>
+          <footer className="footer" >digitalt.pl © {new Date().getFullYear()}</footer>
         </div>
       </>
     )

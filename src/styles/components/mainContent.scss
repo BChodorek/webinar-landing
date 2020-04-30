@@ -8,6 +8,23 @@
   justify-content: space-evenly;
   background-color: rgba($brandPurple, 0.05);
   border-radius: 4px;
+
+&__logoContainer {
+  width:50%;
+  height:2rem;
+  margin: 4rem auto;
+  padding:1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+&__logo {
+  width: 15rem;
+  margin: 2rem;
+}
+
+
   & article {
     margin-top: 3rem;
   }
