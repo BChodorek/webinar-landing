@@ -136,33 +136,36 @@ const mainContent = () => (
           <span className="duration">5'</span>
         </div>
       </div>
-      <p className="mainContent__aboutContent">
+      <section className="mainContent__aboutContent">
         W każdej z części skupimy się nie tylko na tym dlaczego Banki powinny
         rozważyć innowacje w tych obszarach, ale też jak mogą je wprowadzić w
         życie w swoich oddziałach jeszcze w tym roku. Macie pytania?
         Chcielibyście, żebyśmy pokryli konkretne aspekty, które są dla Was
         najbardziej interesujące? Napiszcie do nas poniżej.
         <br />
-        <span>
-          Jeśli chcielibyście zaprosić koleżanki i kolegów z banku - wystarczy
-          podzielić się z nimi tą stroną.
-        </span>
-        <span>
+        <p >
+           Jeśli chcielibyście zaprosić koleżanki i kolegów z banku - wystarczy
+          podzielić się z nimi <span className="bold">tą stroną.</span>
+        </p>
+        <br/>
+        <p >
           Pozdrawiamy serdecznie z Dublina, Krakowa i Warszawy,
-          <br /> Zespół Digitalt & Salesforce
-        </span>
-      </p>
+          <br /> <span className="italic">Zespół Digitalt & Salesforce </span>
+        </p>
+      </section>
     </article>
     <article className="signupForm">
       <h2 className="mainContent__title">Zapisz się</h2>
-      <p className="mainContent__aboutContent">
+      <section className="mainContent__aboutContent">
+        <p className="bold">
         Konferencja odbędzie się w trybie on-line 20 maja 2020 o godz. 12:00.
-        <span>
-          Jeśli chcesz wziąć w niej udział wypełnij poniższy formularz, a my
+        </p>
+        <p>
+           Jeśli chcesz wziąć w niej udział wypełnij poniższy formularz, a my
           prześlemy Ci szczegółowe informacje wraz z linkiem do wydarzenia
           on-line.
-        </span>
-      </p>
+        </p>
+      </section>
       <SignupForm />
     </article>
   </section>
