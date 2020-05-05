@@ -1,7 +1,9 @@
 import React from "react"
+import SignupForm from "./signupForm"
+
 import FirstPortrait from "../images/portrait1.jpg"
 import SecondPortrait from "../images/portrait2.jpg"
-import SignupForm from "./signupForm"
+import ThirdPortrait from "../images/portrait3.jpg"
 import SalesforceLogo from "../images/sfLogo.svg"
 import DigitaltLogo from "../images/digitalt.png"
 
@@ -45,9 +47,9 @@ const mainContent = () => (
             className="mainContent__speakerPhoto"
           />
           <div className="mainContent__speakerDetails">
-            <h3 className="mainContent__speakerTitle">Tytuł prezentacji</h3>
-            <p className="mainContent__speakerName">Jan Nowak</p>
-            <p className="mainContent__speakerInfo">Senior Consultant</p>
+            <h3 className="mainContent__speakerName">Kamil Smuga</h3>
+            <p className="mainContent__speakerInfo">Managing Director</p>
+            <p className="italic">digitalt</p>
           </div>
         </div>
 
@@ -58,22 +60,22 @@ const mainContent = () => (
             className="mainContent__speakerPhoto"
           />
           <div className="mainContent__speakerDetails">
-            <h3 className="mainContent__speakerTitle">Tytuł prezentacji</h3>
-            <p className="mainContent__speakerName">Janina Nowak</p>
-            <p className="mainContent__speakerInfo">Financial Director</p>
+          <h3 className="mainContent__speakerName">Mateusz Knap</h3>
+            <p className="mainContent__speakerInfo">Salesforce Business Consultant</p>
+            <p className="italic">digitalt</p>
           </div>
         </div>
 
         <div className="mainContent__speaker">
           <img
-            src={FirstPortrait}
+            src={ThirdPortrait}
             alt="portret"
             className="mainContent__speakerPhoto"
           />
           <div className="mainContent__speakerDetails">
-            <h3 className="mainContent__speakerTitle">Tytuł prezentacji</h3>
-            <p className="mainContent__speakerName">Stefczyk Bankier</p>
-            <p className="mainContent__speakerInfo">CEO in SKOK Stefczyka</p>
+          <h3 className="mainContent__speakerName">Paweł Jaszczurowski</h3>
+            <p className="mainContent__speakerInfo">Account Executive</p>
+            <p className="italic bold">Salesforce</p>
           </div>
         </div>
       </div>
@@ -105,8 +107,7 @@ const mainContent = () => (
         <div className="mainContent__agendaItem">
           <span className="time">12:45 - 13:05</span>
           <span className="title">
-            {" "}
-            Zdalne wsparcie sprzedaży i budowania relacji z Klientem{" "}
+            Zdalne wsparcie sprzedaży i budowania relacji z Klientem
           </span>
           <span className="duration">20'</span>
         </div>

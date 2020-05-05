@@ -88,7 +88,7 @@ export default class signupForm extends Component {
               required
               onChange={this.handleInputChange}
             >
-              <option value="" disabled>
+              <option value="" defaultValue disabled>
                 -- Wybierz z listy --
               </option>
               <option value="Doradca">Doradca</option>

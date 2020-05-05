@@ -9,21 +9,20 @@
   background-color: rgba($brandPurple, 0.05);
   border-radius: 4px;
 
-&__logoContainer {
-  width:50%;
-  height:2rem;
-  margin: 4rem auto;
-  padding:1rem;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
+  &__logoContainer {
+    width: 50%;
+    height: 2rem;
+    margin: 4rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-&__logo {
-  width: 15rem;
-  margin: 2rem;
-}
-
+  &__logo {
+    width: 15rem;
+    margin: 2rem;
+  }
 
   & article {
     margin-top: 3rem;
@@ -47,6 +46,7 @@
     justify-content: space-around;
     align-items: flex-start;
     border-left: 1px solid $brandPurple;
+    margin-bottom: 5rem;
     &:nth-of-type(even) {
       border-left: none;
       border-right: 1px solid $brandPurple;
@@ -67,15 +67,19 @@
 
   &__speakerName {
     padding-top: 1.6rem;
-    padding-bottom: 1.6rem;
+    text-align: center;
+  }
+  &__speakerInfo {
+    text-align: center;
+    line-height: 120%;
+    padding: 1rem;
   }
   &__speakerPhoto {
+    margin: 1rem;
     object-fit: cover;
     object-position: center;
     height: 20rem;
     width: 20rem;
-    box-shadow: 2px 2px 4px rgba(2, 2, 2, 0.15);
-    margin: 1rem;
   }
   &__agendaContent {
     display: flex;
@@ -87,6 +91,7 @@
     width: 95%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     line-height: 100%;
     border-radius: 2px;
     background-color: rgba($brandBlue, 0.1);
@@ -95,22 +100,21 @@
       background-color: white;
     }
     & span {
-      padding: 2rem 0;
+      padding: 1rem 0;
       margin-left: 2rem;
       margin-right: 2rem;
     }
-
+    & .time {
+      white-space:nowrap;
+    }
     & .title {
       font-weight: bold;
-      font-size: 1.4rem;
       margin-right: auto;
     }
     & .duration {
-
       color: rgba($brandBlue, 0.4);
       font-size: 2.6rem;
       font-weight: bold;
     }
   }
 }
-
