@@ -87,7 +87,7 @@ const mainContent = () => (
         <div className="mainContent__agendaItem">
           <span className="time">12:00 - 12:05</span>
           <span className="title">
-            Rozpęcie konferencji oraz powitanie uczestników i gości
+            Rozpoczęcie konferencji oraz powitanie uczestników i gości
           </span>
           <span className="duration">5'</span>
         </div>
